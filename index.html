@@ -82,7 +82,7 @@ h1{max-width:12em;margin-block:9px 12px;font-size:clamp(38px,10vw,58px);font-wei
 .day-nav-shell{position:sticky;top:0;z-index:20;margin-inline:-18px;padding-inline:18px;background:var(--nav-bg);border-bottom:1px solid var(--separator);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px)}
 .day-nav{display:flex;gap:6px;overflow-x:auto;padding-block:10px;scrollbar-width:none}
 .day-nav a{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-width:58px;min-height:44px;padding-inline:14px;border-radius:999px;color:var(--text);text-decoration:none;font-size:13px;font-weight:680;background:var(--surface);border:1px solid var(--separator)}
-.day-nav a.featured{background:var(--accent);border-color:var(--accent);color:#fff}
+.day-nav a.active,.day-nav a[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 12px var(--accent-soft)}
 .focus{margin-block:24px 52px;padding:26px 22px;border-radius:24px;background:var(--surface);box-shadow:var(--shadow)}
 .focus .tag{color:var(--accent);font-size:12px;font-weight:750;letter-spacing:.08em}
 .focus h2{margin-block:7px 10px;font-size:clamp(26px,6.7vw,33px);font-weight:740;letter-spacing:-.025em;line-height:1.18;text-wrap:balance;overflow-wrap:anywhere}
@@ -183,7 +183,7 @@ footer p{margin-block:0 10px}
 <nav class="day-nav-shell" aria-label="按日期跳转">
   <div class="day-nav">
     <a href="#day-0930">9/30</a>
-    <a class="featured" href="#day-1001">10/1</a>
+    <a class="active" aria-current="true" href="#day-1001">10/1</a>
     <a href="#day-1002">10/2</a>
     <a href="#day-1003">10/3</a>
     <a href="#day-1004">10/4</a>
@@ -227,7 +227,7 @@ footer p{margin-block:0 10px}
   <div class="info-card"><div class="info-copy"><span class="info-label">今晚住宿 · 和也朴舍·温泉民宿</span>弥勒市熙和南路租舍美好家园 6 号 · 出发前确认携宠与停车</div><a class="action" href="https://uri.amap.com/search?keyword=%E5%92%8C%E4%B9%9F%E6%9C%B4%E8%88%8D%C2%B7%E6%B8%A9%E6%B3%89%E6%B0%91%E5%AE%BF&amp;city=%E7%BA%A2%E6%B2%B3&amp;callnative=1" target="_blank" rel="noopener" aria-label="在高德搜索和也朴舍·温泉民宿">高德搜索</a></div>
   <div class="info-card"><div class="info-copy"><span class="info-label">带狗上车</span>上车前先遛狗排便；每 2 小时进服务区活动补水；绝不留狗在车内。</div></div>
   <div class="info-card charge"><div class="info-copy"><span class="info-label">纯电补给</span>佛山取车后先补满电；途中次数按车型续航、拥堵和实际电耗调整。</div></div>
-  <div class="xhs"><b>沿途吃什么</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E4%BD%9B%E5%B1%B1%E5%A4%9C%E5%AE%B5" target="_blank" rel="noopener">佛山夜宵参考</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E9%95%BF%E9%80%94%E8%87%AA%E9%A9%BE%E8%A1%A5%E7%BB%99" target="_blank" rel="noopener">长途自驾补给</a></div>
+  <div class="xhs"><b>沿途吃什么</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E4%BD%9B%E5%B1%B1%E5%A4%9C%E5%AE%B5" target="_blank" rel="noopener">佛山夜宵参考</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E9%95%BF%E9%80%94%E8%87%AA%E9%A9%BE%E8%A1%A5%E7%BB%99" target="_blank" rel="noopener">长途自驾补给</a></div>
 </section>
 
 <section class="day-section" id="day-1001">
@@ -282,7 +282,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">葡萄园与地下酒窖 · 品酒后不开车，务必保留一名司机<span class="credit">© 瑞丽江的河水 / CC BY-SA 4.0</span></p>
   </div>
 </article>
-  <div class="xhs"><b>弥勒美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%BC%A5%E5%8B%92%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%BC%A5%E5%8B%92%E5%8D%A4%E9%B8%A1" target="_blank" rel="noopener">弥勒卤鸡</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%BC%A5%E5%8B%92%E7%BE%8A%E6%B1%A4%E9%94%85" target="_blank" rel="noopener">羊汤锅</a></div>
+  <div class="xhs"><b>弥勒美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%BC%A5%E5%8B%92%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%BC%A5%E5%8B%92%E5%8D%A4%E9%B8%A1" target="_blank" rel="noopener">弥勒卤鸡</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%BC%A5%E5%8B%92%E7%BE%8A%E6%B1%A4%E9%94%85" target="_blank" rel="noopener">羊汤锅</a></div>
 </section>
 
 <section class="day-section" id="day-1002">
@@ -318,7 +318,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">本地菜篮子 · 可买水果与密封零食作路粮</p>
   </div>
 </article>
-  <div class="xhs"><b>普洱美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%99%AE%E6%B4%B1%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%80%9D%E8%8C%85%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">思茅美食</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%99%AE%E6%B4%B1%E5%92%96%E5%95%A1%E6%8E%A2%E5%BA%97" target="_blank" rel="noopener">咖啡探店</a></div>
+  <div class="xhs"><b>普洱美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%99%AE%E6%B4%B1%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%80%9D%E8%8C%85%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">思茅美食</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%99%AE%E6%B4%B1%E5%92%96%E5%95%A1%E6%8E%A2%E5%BA%97" target="_blank" rel="noopener">咖啡探店</a></div>
   <div class="info-card pending"><div class="info-copy"><span class="info-label">普洱住宿待确认</span>现有记录只有“思茅区一号路”，不足以确认酒店。请补齐酒店全名、详细地址、商家高德定位和携宠政策。</div><span class="status">待补定位</span></div>
 </section>
 
@@ -348,7 +348,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">布朗族古寨与古茶林 · 早起喝一泡古树茶<span class="credit">© Yumeto / CC BY-SA 4.0</span></p>
   </div>
 </article>
-  <div class="xhs"><b>景迈山美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%99%AF%E8%BF%88%E5%B1%B1%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">当地美食</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%99%AF%E8%BF%88%E5%B1%B1%E5%86%9C%E5%AE%B6%E4%B9%90" target="_blank" rel="noopener">农家菜</a></div>
+  <div class="xhs"><b>景迈山美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%99%AF%E8%BF%88%E5%B1%B1%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">当地美食</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%99%AF%E8%BF%88%E5%B1%B1%E5%86%9C%E5%AE%B6%E4%B9%90" target="_blank" rel="noopener">农家菜</a></div>
   <div class="info-card"><div class="info-copy"><span class="info-label">今晚住宿 · 芒景村 112 号（翁基古寨）</span>山上夜间较凉 · 入住前再次确认携宠</div><a class="action" href="https://uri.amap.com/search?keyword=%E7%BF%81%E5%9F%BA%E5%8F%A4%E5%AF%A8&amp;city=%E6%99%AE%E6%B4%B1&amp;callnative=1" target="_blank" rel="noopener" aria-label="在高德搜索芒景村 112 号（翁基古寨）">高德搜索</a></div>
 </section>
 
@@ -363,7 +363,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">舂鸡脚、泡鲁达可试 · 人多时看好随身物品<span class="credit">© Roller Coaster Philosophy / CC BY 4.0</span></p>
   </div>
 </article>
-  <div class="xhs"><b>告庄美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%98%9F%E5%85%89%E5%A4%9C%E5%B8%82%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">星光夜市美食</a></div>
+  <div class="xhs"><b>告庄美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%98%9F%E5%85%89%E5%A4%9C%E5%B8%82%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">星光夜市美食</a></div>
   <div class="info-card"><div class="info-copy"><span class="info-label">今晚住宿 · 告庄西双景景兰寨 9 幢</span>夜市周边人流大，确认停车位置与进出路线</div><a class="action" href="https://uri.amap.com/search?keyword=%E5%91%8A%E5%BA%84%E8%A5%BF%E5%8F%8C%E6%99%AF%E6%99%AF%E5%85%B0%E5%AF%A8&amp;city=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3&amp;callnative=1" target="_blank" rel="noopener" aria-label="在高德搜索告庄西双景景兰寨 9 幢">高德搜索</a></div>
 </section>
 
@@ -413,7 +413,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">傍晚灯光好 · 游船另收费按需选择；配图为澜沧江景洪段<span class="credit">© Cangminzho / CC BY-SA 4.0</span></p>
   </div>
 </article>
-  <div class="xhs"><b>版纳美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E7%89%88%E7%BA%B3%E5%BF%85%E5%90%83%E6%A6%9C" target="_blank" rel="noopener">必吃榜</a></div>
+  <div class="xhs"><b>版纳美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E7%89%88%E7%BA%B3%E5%BF%85%E5%90%83%E6%A6%9C" target="_blank" rel="noopener">必吃榜</a></div>
 </section>
 
 <section class="day-section" id="day-1006">
@@ -435,7 +435,7 @@ footer p{margin-block:0 10px}
     <p class="sc-tip">南宁经典酸辣汤粉 · 再配一份酸嘢<span class="credit">© 水餃喵 / CC BY-SA 4.0</span></p>
   </div>
 </article>
-  <div class="xhs"><b>南宁美食参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%8D%97%E5%AE%81%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E4%B8%89%E8%A1%97%E4%B8%A4%E5%B7%B7%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">三街两巷美食</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%8D%97%E5%AE%81%E8%80%81%E5%8F%8B%E7%B2%89" target="_blank" rel="noopener">老友粉</a></div>
+  <div class="xhs"><b>南宁美食参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%8D%97%E5%AE%81%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">美食攻略</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E4%B8%89%E8%A1%97%E4%B8%A4%E5%B7%B7%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">三街两巷美食</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%8D%97%E5%AE%81%E8%80%81%E5%8F%8B%E7%B2%89" target="_blank" rel="noopener">老友粉</a></div>
   <div class="info-card"><div class="info-copy"><span class="info-label">今晚住宿 · 南国大厦 A 座</span>南宁市青秀区竹溪南路 8 号 · 入住前确认携宠</div><a class="action" href="https://uri.amap.com/search?keyword=%E5%8D%97%E5%AE%81%E5%8D%97%E5%9B%BD%E5%A4%A7%E5%8E%A6&amp;city=%E5%8D%97%E5%AE%81&amp;callnative=1" target="_blank" rel="noopener" aria-label="在高德搜索南国大厦 A 座">高德搜索</a></div>
 </section>
 
@@ -445,7 +445,7 @@ footer p{margin-block:0 10px}
   <p class="dayhead">9:00 出发，约 16:00 到祖庙还车 → 顺风车备注带狗，返回宝安大仟里，环线闭合。</p>
   <div class="info-card charge"><div class="info-copy"><span class="info-label">充电 2 次</span>还车前按租车要求补足电量，并预留国庆返程拥堵时间。</div></div>
   <div class="info-card"><div class="info-copy"><span class="info-label">行程终点 · 深圳宝安大仟里</span>佛山祖庙还车后，顺风车返回深圳</div><a class="action" href="https://uri.amap.com/search?keyword=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E5%A4%A7%E4%BB%9F%E9%87%8C&amp;city=%E6%B7%B1%E5%9C%B3&amp;callnative=1" target="_blank" rel="noopener" aria-label="在高德搜索深圳宝安大仟里">高德搜索</a></div>
-  <div class="xhs"><b>返程吃什么</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E4%BD%9B%E5%B1%B1%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">佛山美食参考</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">宝安美食参考</a></div>
+  <div class="xhs"><b>返程吃什么</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E4%BD%9B%E5%B1%B1%E7%BE%8E%E9%A3%9F%E6%94%BB%E7%95%A5" target="_blank" rel="noopener">佛山美食参考</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E7%BE%8E%E9%A3%9F" target="_blank" rel="noopener">宝安美食参考</a></div>
 </section>
 
 <section class="dog" aria-labelledby="dog-title">
@@ -458,7 +458,7 @@ footer p{margin-block:0 10px}
     <div class="cell"><b>景区</b><span>温泉、佛寺不带狗，同行人轮流照看；古寨牵绳并避让家禽。</span></div>
   </div>
 </section>
-<div class="xhs"><b>带狗旅行参考</b><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%B8%A6%E7%8B%97%E8%87%AA%E9%A9%BE%E6%B8%B8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" target="_blank" rel="noopener">带狗自驾注意事项</a><a href="https://www.xiaohongshu.com/search_result?keyword=%E5%AE%A0%E7%89%A9%E5%8F%8B%E5%A5%BD%E4%BA%91%E5%8D%97" target="_blank" rel="noopener">宠物友好云南</a></div>
+<div class="xhs"><b>带狗旅行参考</b><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%B8%A6%E7%8B%97%E8%87%AA%E9%A9%BE%E6%B8%B8%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" target="_blank" rel="noopener">带狗自驾注意事项</a><a href="https://www.xiaohongshu.com/search_result/?keyword=%E5%AE%A0%E7%89%A9%E5%8F%8B%E5%A5%BD%E4%BA%91%E5%8D%97" target="_blank" rel="noopener">宠物友好云南</a></div>
 
 <div class="section-title"><h2>出发前再确认</h2></div>
 <ul class="check">
@@ -477,5 +477,32 @@ footer p{margin-block:0 10px}
   <p>照片（Wikimedia Commons 开放授权）：东风韵 © Ping an Chang、弥勒葡萄 © 瑞丽江的河水（CC BY-SA 4.0）、湖泉水乡航拍 © CatOnMars（CC BY 4.0）、戴家巷 © 瑞丽江的河水（CC BY-SA 4.0）、糯干古寨 © Tcchang0825（CC0）、芒洪/翁基 © Yumeto（CC BY-SA 4.0）、星光夜市/大金塔 © Roller Coaster Philosophy（CC BY 4.0）、总佛寺 © Chlukoe（CC BY-SA 4.0）、曼听佛寺 © Harald Groven（CC BY-SA 4.0）、泼水广场 © Liuxingy（CC BY-SA 4.0）、澜沧江景洪段 © Cangminzho（CC BY-SA 4.0）、三街两巷 © 重庆轨交18（CC BY-SA 4.0）、蒙自过桥米线 © N509FZ（CC BY-SA 4.0）、普洱茶饼 © Yon（CC BY-SA 3.0）、南宁老友粉 © 水餃喵（CC BY-SA 4.0）。民宿/温泉/卤鸡/般若寺/农贸市场等为原创插画块，未使用来源不明照片。</p>
 </footer>
 </div>
+<script>
+(() => {
+  const links = [...document.querySelectorAll('.day-nav a')];
+  const sections = links.map(link => document.querySelector(link.hash)).filter(Boolean);
+  const setActive = id => {
+    links.forEach(link => {
+      const active = link.hash === `#${id}`;
+      link.classList.toggle('active', active);
+      if (active) {
+        link.setAttribute('aria-current', 'true');
+        link.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
+  links.forEach(link => link.addEventListener('click', () => setActive(link.hash.slice(1))));
+  const observer = new IntersectionObserver(entries => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+    if (visible) setActive(visible.target.id);
+  }, {rootMargin: '-72px 0px -68% 0px', threshold: 0});
+  sections.forEach(section => observer.observe(section));
+  if (location.hash && document.querySelector(location.hash)) setActive(location.hash.slice(1));
+})();
+</script>
 </body>
 </html>
